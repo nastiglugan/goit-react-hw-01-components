@@ -1,8 +1,13 @@
-import profileInfo from '';
-import { Profile } from '';
+import user from '../user';
+import { Profile } from './Profile/Profile';
+import { Statistics } from './Statistics/Statistics';
 
 export const App = () => {
-  return <Profile />;
+  return (
+    <Profile user={user} />
+
+    // <Statistics data={data} />
+  );
 };
 
 // <div
