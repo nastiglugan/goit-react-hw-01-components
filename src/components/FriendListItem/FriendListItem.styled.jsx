@@ -15,11 +15,9 @@ export const Name = styled.p`
 `;
 
 const setBgColor = props => {
-  if (props.type) {
-    return 'green';
-  } else {
-    return 'red';
-  }
+  const color1 = 'green';
+  const color2 = 'red';
+  return props.type ? color1 : color2;
 };
 
 export const Status = styled.span`
